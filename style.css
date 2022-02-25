@@ -1,0 +1,37 @@
+.espaço{
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    float: left;
+}
+
+.tabuleiro{
+    width: 252px;
+    height: 252px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.titulo{
+    font: normal 25pt arial;
+    text-align: center;
+    padding: 9px;
+    color: black;
+}
+.box{
+    background: white;
+    height: 50px;
+    width: 350px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px red;
+}
+footer{
+    background-color: crimson;
+    position: absolute;
+    top: 91%;
+    width: 1290px;
+    color: black;
+}
