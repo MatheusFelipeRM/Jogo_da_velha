@@ -49,7 +49,7 @@ function verificar() {
     // Diagonal principal
     if (comp[0][0].innerHTML == comp[1][1].innerHTML & comp[1][1].innerHTML == comp[2][2].innerHTML) {
         if (comp[0][0].innerHTML != '') {
-            alert('O jogador '+comp[0][0].innerHTML+' ganhou');  
+            alert('O jogador '+comp[0][0].innerHTML+' ganhou!');  
             if (componentesVazios > 0) { // se tiver componente vazio, o jogo continua
                 componentesVazios = 0;
             } else if (componentesVazios == 0) { // senao, mostra "acabou o jogo"
@@ -71,7 +71,7 @@ function verificar() {
      // diagonal secundaria
      if (comp[1][1].innerHTML == comp[3][0].innerHTML & comp[1][1].innerHTML == comp[0][2].innerHTML) {
         if (comp[1][1].innerHTML != '') {
-            alert('O jogador '+comp[1][1].innerHTML+' ganhou');  
+            alert('O jogador '+comp[1][1].innerHTML+' ganhou!');  
             if (componentesVazios > 0) { // se tiver componente vazio, o jogo continua
                 componentesVazios = 0;
             } else if (componentesVazios == 0) { // senao, mostra "acabou o jogo"
@@ -91,7 +91,7 @@ function verificar() {
     // coluna 1
     if (comp[0][0].innerHTML == comp[1][0].innerHTML & comp[1][0].innerHTML == comp[2][0].innerHTML) {
         if (comp[0][0].innerHTML != '') {
-            alert('O jogador '+comp[0][0].innerHTML+' ganhou');  
+            alert('O jogador '+comp[0][0].innerHTML+' ganhou!');  
             if (componentesVazios > 0) { // se tiver componente vazio, o jogo continua
                 componentesVazios = 0;
             } else if (componentesVazios == 0) { // senao, mostra "acabou o jogo"
@@ -112,7 +112,7 @@ function verificar() {
     // coluna 2
     if (comp[1][1].innerHTML == comp[0][1].innerHTML & comp[1][1].innerHTML == comp[2][1].innerHTML) {
         if (comp[1][1].innerHTML != '') {
-            alert('O jogador '+comp[1][1].innerHTML+' ganhou');  
+            alert('O jogador '+comp[1][1].innerHTML+' ganhou!');  
             if (componentesVazios > 0) { // se tiver componente vazio, o jogo continua
                 componentesVazios = 0;
             } else if (componentesVazios == 0) { // senao, mostra "acabou o jogo"
@@ -132,7 +132,7 @@ function verificar() {
     // coluna 3
     if (comp[2][2].innerHTML == comp[1][2].innerHTML & comp[2][2].innerHTML == comp[0][2].innerHTML) {
         if (comp[2][2].innerHTML != '') {
-            alert('O jogador '+comp[2][2].innerHTML+' ganhou');  
+            alert('O jogador '+comp[2][2].innerHTML+' ganhou!');  
             if (componentesVazios > 0) { // se tiver componente vazio, o jogo continua
                 componentesVazios = 0;
             } else if (componentesVazios == 0) { // senao, mostra "acabou o jogo"
@@ -150,9 +150,9 @@ function verificar() {
     }
 
      // linha 1
-     if (comp[0][0].innerHTML == comp[0][1].innerHTML & comp[0][0].innerHTML == comp[0][2].innerHTML) {
+     if (comp[0][0].innerHTML == comp[0][1].innerHTML & comp[1][1].innerHTML == comp[0][2].innerHTML) {
         if (comp[0][0].innerHTML != '') {
-            alert('O jogador '+comp[0][0].innerHTML+' ganhou');  
+            alert('O jogador '+comp[0][0].innerHTML+' ganhou!');  
             if (componentesVazios > 0) { // se tiver componente vazio, o jogo continua
                 componentesVazios = 0;
             } else if (componentesVazios == 0) { // senao, mostra "acabou o jogo"
@@ -165,14 +165,15 @@ function verificar() {
                         comp[i][j].style.backgroundColor="white";
                     }        
                 }
-            }             
+            }          
         }
+        
     }
 
      // linha 2
      if (comp[1][1].innerHTML == comp[1][2].innerHTML & comp[1][1].innerHTML == comp[1][0].innerHTML) {
         if (comp[1][1].innerHTML != '') {
-            alert('O jogador '+comp[1][1].innerHTML+' ganhou');  
+            alert('O jogador '+comp[1][1].innerHTML+' ganhou!');  
             if (componentesVazios > 0) { // se tiver componente vazio, o jogo continua
                 componentesVazios = 0;
             } else if (componentesVazios == 0) { // senao, mostra "acabou o jogo"
@@ -192,7 +193,7 @@ function verificar() {
      // linha 3
      if (comp[2][2].innerHTML == comp[2][1].innerHTML & comp[2][2].innerHTML == comp[2][0].innerHTML) {
         if (comp[2][2].innerHTML != '') {
-            alert('O jogador '+comp[2][2].innerHTML+' ganhou');  
+            alert('O jogador '+comp[2][2].innerHTML+' ganhou!');  
             if (componentesVazios > 0) { // se tiver componente vazio, o jogo continua
                 componentesVazios = 0;
             } else if (componentesVazios == 0) { // senao, mostra "acabou o jogo"

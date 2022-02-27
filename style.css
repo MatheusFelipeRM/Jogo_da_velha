@@ -26,10 +26,9 @@
     width: 350px;
     margin: auto;
     border-radius: 20px;
-    box-shadow: 5px 5px 30px red;
+    box-shadow: 5px 5px 30px black;
 }
 footer{
-    background-color: crimson;
     position: absolute;
     top: 91%;
     width: 1290px;
