@@ -219,7 +219,7 @@ function verificar() {
             
         }        
     }
-
+}
     
     if (componentesVazios > 0) { // se tiver componente vazio, o jogo continua
         componentesVazios = 0;
@@ -235,7 +235,7 @@ function verificar() {
         }
     }
     
-}
+
 
     
     
