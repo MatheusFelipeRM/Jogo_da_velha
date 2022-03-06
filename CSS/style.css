@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(184, 5, 5);
+    background-image: linear-gradient(to right, blue, red);
+
 }
 .espaço{
     width: 80px;
@@ -24,12 +25,12 @@ body{
     color: black;
 }
 .box{
-    background: white;
+    background-image: linear-gradient(to right, blue, green);
     height: 50px;
     width: 350px;
     margin: auto;
     border-radius: 20px;
-    box-shadow: 5px 5px 30px black;
+    box-shadow: 10px 10px 30px black;
 }
 footer{
     position: absolute;
