@@ -25,12 +25,12 @@ function jogada(casa){
     
     if(casa2.innerHTML == ""){
         if(vezJogador1==true){
-            casa2.innerHTML = "x";
+            casa2.innerHTML = "X";
             vezJogador1 = false
             document.getElementById(casa).style.backgroundColor="red";
             verificar();
         }else{
-            casa2.innerHTML = "o";
+            casa2.innerHTML = "O";
             vezJogador1 = true
             document.getElementById(casa).style.backgroundColor="green";
             verificar();
@@ -42,18 +42,55 @@ function jogada(casa){
 
 function verificar() {
     // Diagonal principal
-    if (comp[0][0].innerHTML == comp[1][1].innerHTML & comp[1][1].innerHTML == comp[2][2].innerHTML) {
+    if (comp[0][0].innerHTML == comp[1][1].innerHTML && comp[1][1].innerHTML == comp[2][2].innerHTML) {
         if (comp[0][0].innerHTML != '') {
-            alert('O jogador '+comp[0][0].innerHTML+' ganhou');            
+            alert('O jogador '+comp[0][0].innerHTML+' ganhou');                        
         }
     }
 
     // coluna 1
-    if (comp[0][0].innerHTML == comp[1][0].innerHTML & comp[1][0].innerHTML == comp[2][0].innerHTML) {
+    if (comp[0][0].innerHTML == comp[1][0].innerHTML && comp[1][0].innerHTML == comp[2][0].innerHTML) {
         if (comp[0][0].innerHTML != '') {
             alert('O jogador '+comp[0][0].innerHTML+' ganhou');            
         }
     }
+    //coluna 2
+    if (comp[0][1].innerHTML == comp[1][1].innerHTML && comp[1][1].innerHTML == comp[2][1].innerHTML) {
+        if (comp[1][1].innerHTML != '') {
+            alert('O jogador '+comp[1][1].innerHTML+' ganhou');            
+        }
+    }
+    //coluna 3
+    if (comp[0][2].innerHTML == comp[1][2].innerHTML && comp[0][2].innerHTML == comp[2][2].innerHTML) {
+        if (comp[0][2].innerHTML != '') {
+            alert('O jogador '+comp[1][2].innerHTML+' ganhou');            
+        }
+    }
+    //linha 1
+    if (comp[0][0].innerHTML == comp[0][1].innerHTML && comp[0][0].innerHTML == comp[0][2].innerHTML) {
+        if (comp[0][0].innerHTML != '') {
+            alert('O jogador '+comp[0][0].innerHTML+' ganhou');            
+        }
+    }
+    //linha 2
+    if (comp[1][0].innerHTML == comp[1][1].innerHTML && comp[1][1].innerHTML == comp[1][2].innerHTML) {
+        if (comp[1][1].innerHTML != '') {
+            alert('O jogador '+comp[1][1].innerHTML+' ganhou');            
+        }
+    }
+    //linha 3
+    if (comp[2][2].innerHTML == comp[2][1].innerHTML && comp[2][2].innerHTML == comp[2][0].innerHTML) {
+        if (comp[2][2].innerHTML != '') {
+            alert('O jogador '+comp[2][2].innerHTML+' ganhou');            
+        }
+    }
+    //diagonal secundaria
+    if (comp[2][0].innerHTML == comp[1][1].innerHTML && comp[2][0].innerHTML == comp[0][2].innerHTML) {
+        if (comp[1][1].innerHTML != '') {
+            alert('O jogador '+comp[1][1].innerHTML+' ganhou');            
+        }
+    }
+    
 
     
     // testar se tem algum componente vazio
